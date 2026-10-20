@@ -31,7 +31,7 @@ Para observar qué ocurre sin dependencias:
 
 1. Abre las herramientas de desarrollador, ve a **Red**, activa **Conservar registro** y filtra por `productos`.
 2. En `src/hooks/useProductos.ts`, quita temporalmente el segundo argumento del efecto (`[intento]`) y guarda.
-3. Observa que aparecen GET repetidos: cada respuesta actualiza `datos` y `cargando`, vuelve a renderizar la pantalla y React vuelve a ejecutar el efecto.
+3. Observa que aparecen GET repetidos: cada respuesta válida actualiza `datos`, vuelve a renderizar la pantalla y React vuelve a ejecutar el efecto.
 4. Restaura `[intento]` y guarda. El efecto vuelve a ejecutarse sólo al montar o al pulsar **Reintentar**.
 
 ## Ejercicio 2: pago simulado
